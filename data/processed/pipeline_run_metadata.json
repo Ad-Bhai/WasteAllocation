@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-10-17T21:31:18.180695",
+  "duration_seconds": 0.714,
+  "engine": "Pandas/DuckDB",
+  "total_records_ingested": 224,
+  "total_records_processed": 16,
+  "total_records_skipped": 0,
+  "status": "SUCCESS"
+}

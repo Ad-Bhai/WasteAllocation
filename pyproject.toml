@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wastewise"
+version = "1.0.0"
+description = "Food Waste Analytics & ETL Pipeline for Grocery Retail"
+authors = [{ name = "WasteWise Engineering Team" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas>=2.2.0",
+    "pyarrow>=15.0.0",
+    "duckdb>=1.0.0",
+    "streamlit>=1.35.0",
+    "plotly>=5.20.0"
+]
+
+[project.optional-dependencies]
+spark = [
+    "pyspark>=3.5.0"
+]
+dev = [
+    "pytest>=8.0.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-v --tb=short"
